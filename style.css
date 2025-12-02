@@ -3,16 +3,20 @@ body
     background-color: #432818;
     color: #f2e9e4;
 }
-#title
+.title
 {
     font-family: 'Ubuntu Mono', sans-serif;
     font-style: normal;
-    font-size: 45px;
+    /* font-size: 45px; */
 }
 .set
 {
     display:inline-block;
     padding: 10px;
+}
+a
+{
+    display: inline-block;
 }
 
 .btn {
@@ -23,67 +27,14 @@ body
     border-radius: 4px;
     text-decoration: none;
   }
-  .btn:hover {
+.btn:hover {
     background: #ffe6a7;
-  }
-
-
-
-
-
-/* Info button */
-.info-btn {
-  width: 18px;
-  height: 18px;
-  border-radius: 20%;
-  border: none;
-  background: #007bff;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 15px;
+}
+.btn:active
+{
+    transform: scale(0.9);
 }
 
-/* Keep box positioned relative to button */
-.info-wrapper {
-  position: relative;
-  display: inline-block;
-}
 
-/* Hide/Show class */
-.hidden {
-  display: none;
-}
 
-/* The drop box itself */
-.drop-box {
-  position: absolute;
-  top: 40px;          /* directly under button */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 260px;
 
-  background: white;  /* ensures text visible */
-  color: black;       /* text stays visible */
-  padding: 15px 18px;
-  border-radius: 10px;
-
-  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-  z-index: 9999;      /* <— keeps it above everything */
-
-  opacity: 0;
-  translate: 0 -10px;
-  animation: drop 0.25s ease-out forwards;
-}
-
-/* Drop animation */
-@keyframes drop {
-  0% {
-    opacity: 0;
-    translate: 0 -10px;
-  }
-  100% {
-    opacity: 1;
-    translate: 0 0;
-  }
-}
